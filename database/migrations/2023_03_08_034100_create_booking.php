@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('mountain_id');
             $table->string('name');
-            $table->timestamps('checkin');
+            $table->timestamp('checkin')->nullable();
             $table->string('no_whatsapp');
             $table->string('member');
             $table->timestamps();

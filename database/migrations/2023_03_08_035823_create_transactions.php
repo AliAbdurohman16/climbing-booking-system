@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('no_whatsappp');
             $table->string('payment_type');
             $table->string('provider');
-            $table->timestamps('date');
+            $table->timestamp('date')->nullable();
             $table->string('total');
             $table->string('status');
             $table->timestamps();
