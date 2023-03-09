@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('name');
             $table->timestamp('checkin')->nullable();
             $table->string('no_whatsapp');
-            $table->string('member');
+            $table->string('climber');
             $table->timestamps();
             $table->foreign('mountain_id')->references('id')->on('mountain');
         });
