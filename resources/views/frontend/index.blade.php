@@ -35,15 +35,19 @@
                                         <div class="col-md-12">
                                             <div class="mb-3">
                                                 <label class="form-label"> Check in : </label>
-                                                <input name="date" type="text" class="form-control start" placeholder="Check in :">
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="calendar" class="fea icon-sm icons"></i>
+                                                    <input name="date" type="text" class="form-control ps-5" placeholder="Check in">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="mb-3">
-                                                <label class="form-label">Email</label>
+                                                <label class="form-label">No Whatsapp</label>
                                                 <div class="form-icon position-relative">
-                                                    <i data-feather="mail" class="fea icon-sm icons"></i>
-                                                    <input type="email" class="form-control ps-5" placeholder="Email" name="email" required="">
+                                                    <span>+62</span>
+                                                    <input type="number" class="form-control ps-5" placeholder="Contoh : 81234567890" name="whatsapp" required="">
+                                                    <small>catatan: no whatsapp tidak di awali dengan angka 0</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -51,8 +55,8 @@
                                             <div class="mb-3">
                                                 <label class="form-label">Jumlah Pendaki</label>
                                                 <div class="form-icon position-relative">
-                                                    <i data-feather="user" class="fea icon-sm icons"></i>
-                                                    <input type="number" class="form-control ps-5" placeholder="Jumlah Pendaki" name="email" required="">
+                                                    <i data-feather="users" class="fea icon-sm icons"></i>
+                                                    <input type="number" class="form-control ps-5" placeholder="Jumlah Pendaki" name="jml_pendaki" required="">
                                                 </div>
                                             </div>
                                         </div>
@@ -361,7 +365,7 @@
                                 <div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body text-muted">
-                                        Registrasi atau Login terlebih dahulu lalu setelah itu pengguna bisa melakukan pemesanan tiket pendakian.
+                                        Isi form terlebih dahulu lalu setelah itu pengguna bisa melakukan pemesanan tiket pendakian.
                                     </div>
                                 </div>
                             </div>
@@ -376,7 +380,7 @@
                                 <div id="collapseFour" class="accordion-collapse border-0 collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body text-muted">
-                                        Pengguna akan melakukan Registrasi atau Login terlebih dahulu sebelum mulai pemesanan.
+                                        Pengguna akan melengkapi form terlebih dahulu pada saat pemesanan.
                                     </div>
                                 </div>
                             </div>
