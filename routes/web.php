@@ -13,11 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
 Route::get('/', [App\Http\Controllers\Frontend\IndexController::class, 'index'])->name('/');
-// Auth::routes();
-Route::get('/login', function () {
-    return view('auth.login');
-});
-Route::get('/dashboard', function () {
-    return view('backend.dashboard');
-});
+
+// Route::get('/login', function () {
+//     return view('auth.login');
+// });
+// Route::get('/dashboard', function () {
+//     return view('backend.dashboard');
+// });
