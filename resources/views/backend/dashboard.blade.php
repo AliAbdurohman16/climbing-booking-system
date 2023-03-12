@@ -2,7 +2,7 @@
 
 @section('title', 'Dashboard')
 
-@section('content')                       
+@section('content')
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
                                 <h6 class="text-muted mb-1">Welcome back, Cristina!</h6>
@@ -18,7 +18,7 @@
                                 </select>
                             </div>
                         </div>
-                    
+
                         <div class="row row-cols-xl-5 row-cols-md-2 row-cols-1">
                             <div class="col mt-4">
                                 <a href="#!" class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
@@ -35,7 +35,7 @@
                                     <span class="text-danger"><i class="uil uil-chart-down"></i> 0.5%</span>
                                 </a>
                             </div><!--end col-->
-                            
+
                             <div class="col mt-4">
                                 <a href="#!" class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
                                     <div class="d-flex align-items-center">
@@ -51,7 +51,7 @@
                                     <span class="text-success"><i class="uil uil-arrow-growth"></i> 3.84%</span>
                                 </a>
                             </div><!--end col-->
-                            
+
                             <div class="col mt-4">
                                 <a href="#!" class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
                                     <div class="d-flex align-items-center">
@@ -67,7 +67,7 @@
                                     <span class="text-success"><i class="uil uil-arrow-growth"></i> 1.46%</span>
                                 </a>
                             </div><!--end col-->
-                            
+
                             <div class="col mt-4">
                                 <a href="#!" class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
                                     <div class="d-flex align-items-center">
@@ -83,7 +83,7 @@
                                     <span class="text-muted"><i class="uil uil-analysis"></i> 0.0%</span>
                                 </a>
                             </div><!--end col-->
-                            
+
                             <div class="col mt-4">
                                 <a href="#!" class="features feature-primary d-flex justify-content-between align-items-center rounded shadow p-3">
                                     <div class="d-flex align-items-center">
@@ -106,7 +106,7 @@
                                 <div class="card shadow border-0 p-4 pb-0 rounded">
                                     <div class="d-flex justify-content-between">
                                         <h6 class="mb-0 fw-bold">Sales Analytics</h6>
-                                        
+
                                         <div class="mb-0 position-relative">
                                             <select class="form-select form-control" id="yearchart">
                                                 <option selected>2021</option>
@@ -124,7 +124,7 @@
                                     <div class="p-4 border-bottom">
                                         <div class="d-flex justify-content-between">
                                             <h6 class="mb-0 fw-bold">Upcoming Activity</h6>
-                                            
+
                                             <a href="#!" class="text-primary">See More <i class="uil uil-arrow-right align-middle"></i></a>
                                         </div>
                                     </div>
@@ -234,7 +234,7 @@
                                             <div id="sale-chart"></div>
                                         </div>
                                     </div><!--end col-->
-                                    
+
                                     <div class="col-xl-12 mt-4">
                                         <div class="card rounded shadow border-0 p-4">
                                             <div class="d-flex justify-content-between mb-4">

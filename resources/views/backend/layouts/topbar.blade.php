@@ -37,7 +37,7 @@
                                     <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
                                         <span class="visually-hidden">New alerts</span>
                                     </span>
-                    
+
                                     <div class="dropdown-menu dd-menu shadow rounded border-0 mt-3 p-0" data-simplebar style="height: 320px; width: 290px;">
                                         <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
                                             <h6 class="mb-0 text-dark">Notifications</h6>
@@ -55,7 +55,7 @@
                                                     </div>
                                                 </div>
                                             </a>
-                            
+
                                             <a href="#!" class="dropdown-item features feature-primary key-feature p-0 mt-3">
                                                 <div class="d-flex align-items-center">
                                                     <img src="{{ asset('backend') }}/assets/images/client/04.jpg" class="avatar avatar-md-sm rounded-circle border shadow me-2" alt="">
@@ -65,7 +65,7 @@
                                                     </div>
                                                 </div>
                                             </a>
-                            
+
                                             <a href="#!" class="dropdown-item features feature-primary key-feature p-0 mt-3">
                                                 <div class="d-flex align-items-center">
                                                     <div class="icon text-center rounded-circle me-2">
@@ -89,7 +89,7 @@
                                                     </div>
                                                 </div>
                                             </a>
-                            
+
                                             <a href="#!" class="dropdown-item features feature-primary key-feature p-0 mt-3">
                                                 <div class="d-flex align-items-center">
                                                     <img src="{{ asset('backend') }}/assets/images/client/15.jpg" class="avatar avatar-md-sm rounded-circle border shadow me-2" alt="">
