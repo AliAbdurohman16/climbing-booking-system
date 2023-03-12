@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('no_telepon')->nullable();
             $table->string('image')->nullable()->default('uploads/users/Avatar.png');
-            // $table->rememberToken();
+            $table->rememberToken();
             $table->timestamps();
         });
     }
