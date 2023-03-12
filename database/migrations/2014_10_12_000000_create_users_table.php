@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('password');
             $table->string('no_telepon')->nullable();
             $table->string('image')->nullable()->default('uploads/users/Avatar.png');
-            $table->enum('level', ['user', 'employee', 'admin'])->default('employee');
             // $table->rememberToken();
             $table->timestamps();
         });

@@ -25,7 +25,6 @@ class User extends Authenticatable
         'password',
         'no_telepon',
         'image',
-        'level',
     ];
 
     /**
