@@ -39,4 +39,37 @@ class VerificationController extends Controller
         $this->middleware('signed')->only('verify');
         $this->middleware('throttle:6,1')->only('verify', 'resend');
     }
+
+    public function show(Request $request)
+    {
+        return $request->user()->hasVerifiedEmail()
+                                ? redirect($this->redirectPath())
+                                : view('auth.verify');
+    }
+
+    public function verify(Request $request)
+    {
+        $user = $request->user();
+
+        if ($user->hasVerifiedEmail()) {
+            return redirect($this->redirectPath());
+        }
+
+        $user->markEmailAsVerified();
+
+        return redirect($this->redirectPath())->with('verified', true);
+    }
+
+    public function resend(Request $request)
+    {
+        $user = $request->user();
+
+        if ($user->hashVerifiedEmail()) {
+            return redirect($this->redirectPath());
+        }
+
+        $user->sendEmailVerificationNotification();
+
+        return back()->with('resent', true);
+    }
 }
