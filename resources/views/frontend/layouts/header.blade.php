@@ -27,8 +27,26 @@
             </div>
         </div>
 
+        <!--Login button Start-->
+        <ul class="buy-button list-inline mb-0">
+            <li class="list-inline-item mb-0">
+                <a href="{{ route('register') }}">
+                    <div class="login-btn-primary"><span class="btn btn-primary">Daftar</span></div>
+                    <div class="login-btn-light"><span class="btn btn-light">Daftar</span></div>
+                </a>
+            </li>
+
+            <li class="list-inline-item ps-1 mb-0">
+                <a href="{{ route('login') }}">
+                    <div class="login-btn-primary"><span class="btn btn-outline-primary">Masuk</span></div>
+                    <div class="login-btn-light"><span class="btn btn-outline-light">Masuk</span></div>
+                </a>
+            </li>
+        </ul>
+        <!--Login button End-->
+
         <div id="navigation">
-            <!-- Navigation Menu-->   
+            <!-- Navigation Menu-->
             <ul class="navigation-menu nav-light">
                 <li><a href="" class="sub-menu-item">Beranda</a></li>
                 <li><a href="#tentang" class="sub-menu-item">Tentang</a></li>
