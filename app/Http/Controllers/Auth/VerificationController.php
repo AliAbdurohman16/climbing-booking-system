@@ -65,7 +65,7 @@ class VerificationController extends Controller
     {
         $user = $request->user();
 
-        if ($user->hashVerifiedEmail()) {
+        if ($user->hasVerifiedEmail()) {
             return redirect($this->redirectPath());
         }
 
