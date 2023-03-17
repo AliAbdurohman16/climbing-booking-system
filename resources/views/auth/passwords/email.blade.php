@@ -1,6 +1,6 @@
 @extends('auth.layouts.main')
 
-@section('title', 'Setel Ulang Kata Sandi')
+@section('title', 'Lupa Kata Sandi')
 
 @section('content')
 <!-- Hero Start -->
@@ -14,7 +14,7 @@
                         @csrf
 
                         <a href="{{ route('/') }}"><img src="{{ asset('backend') }}/assets/images/logo-icon.png" class="avatar avatar-small mb-4 d-block mx-auto" alt=""></a>
-                        <h5 class="mb-3 text-center">Setel ulang kata sandi anda</h5>
+                        <h5 class="mb-3 text-center">Lupa kata sandi</h5>
 
                         @if (session('status'))
                             <div class="alert alert-success" role="alert">
