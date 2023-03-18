@@ -15,11 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes(['verify' => true]);
 
-Route::get('/', [App\Http\Controllers\Frontend\IndexController::class, 'index'])->name('/');
+Route::get('/', [App\Http\Controllers\Frontend\IndexController::class, 'index']);
 
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('backend.dashboard');
-    });
+    Route::get('/dashboard', [App\Http\Controllers\Backend\DashboardController::class, 'index']);
+    Route::resources([
+        'mountain' => App\Http\Controllers\Backend\MountainController::class,
+    ]);
 });
