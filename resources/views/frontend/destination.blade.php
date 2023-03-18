@@ -15,7 +15,7 @@
                 <div class="tiny-six-item">
                     <div class="tiny-slide">
                         <div class="popular-tour rounded-md position-relative overflow-hidden mx-2">
-                            <img src="{{ asset('frontend') }}/assets/images/content/merapi.jpg" class="img-popular-tour" alt="">
+                            <img src="{{ asset('frontend') }}/assets/images/content/merapi.jpg" class="img-popular-tour" alt="img-gunung">
                             <div class="content">
                                 <a href="javascript:void(0)" class="title text-white h4 title-dark">Merapi</a>
                             </div>
@@ -24,7 +24,7 @@
 
                     <div class="tiny-slide">
                         <div class="popular-tour rounded-md position-relative overflow-hidden mx-2">
-                            <img src="{{ asset('frontend') }}/assets/images/content/bromo.jpg" class="img-popular-tour" alt="">
+                            <img src="{{ asset('frontend') }}/assets/images/content/bromo.jpg" class="img-popular-tour" alt="img-gunung">
                             <div class="content">
                                 <a href="javascript:void(0)" class="title text-white h4 title-dark">Bromo</a>
                             </div>
@@ -33,7 +33,7 @@
 
                     <div class="tiny-slide">
                         <div class="popular-tour rounded-md position-relative overflow-hidden mx-2">
-                            <img src="{{ asset('frontend') }}/assets/images/content/batur.jpg" class="img-popular-tour" alt="">
+                            <img src="{{ asset('frontend') }}/assets/images/content/batur.jpg" class="img-popular-tour" alt="img-gunung">
                             <div class="content">
                                 <a href="javascript:void(0)" class="title text-white h4 title-dark">Batur</a>
                             </div>
@@ -42,7 +42,7 @@
 
                     <div class="tiny-slide">
                         <div class="popular-tour rounded-md position-relative overflow-hidden mx-2">
-                            <img src="{{ asset('frontend') }}/assets/images/content/dieng.jpg" class="img-popular-tour" alt="">
+                            <img src="{{ asset('frontend') }}/assets/images/content/dieng.jpg" class="img-popular-tour" alt="img-gunung">
                             <div class="content">
                                 <a href="javascript:void(0)" class="title text-white h4 title-dark">Dieng</a>
                             </div>
@@ -51,7 +51,7 @@
 
                     <div class="tiny-slide">
                         <div class="popular-tour rounded-md position-relative overflow-hidden mx-2">
-                            <img src="{{ asset('frontend') }}/assets/images/content/semeru.png" class="img-popular-tour" alt="">
+                            <img src="{{ asset('frontend') }}/assets/images/content/semeru.png" class="img-popular-tour" alt="img-gunung">
                             <div class="content">
                                 <a href="javascript:void(0)" class="title text-white h4 title-dark">Semeru</a>
                             </div>
@@ -60,7 +60,7 @@
 
                     <div class="tiny-slide">
                         <div class="popular-tour rounded-md position-relative overflow-hidden mx-2">
-                            <img src="{{ asset('frontend') }}/assets/images/content/rinjani.jpeg" class="img-popular-tour" alt="">
+                            <img src="{{ asset('frontend') }}/assets/images/content/rinjani.jpeg" class="img-popular-tour" alt="img-gunung">
                             <div class="content">
                                 <a href="javascript:void(0)" class="title text-white h4 title-dark">Rinjani</a>
                             </div>
@@ -69,7 +69,7 @@
 
                     <div class="tiny-slide">
                         <div class="popular-tour rounded-md position-relative overflow-hidden mx-2">
-                            <img src="{{ asset('frontend') }}/assets/images/content/sumbing.jpeg" class="img-popular-tour" alt="">
+                            <img src="{{ asset('frontend') }}/assets/images/content/sumbing.jpeg" class="img-popular-tour" alt="img-gunung">
                             <div class="content">
                                 <a href="javascript:void(0)" class="title text-white h4 title-dark">Sumbing</a>
                             </div>
