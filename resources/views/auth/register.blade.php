@@ -57,7 +57,7 @@
                             <div class="row">
                                 <div class="col-6 mt-3">
                                     <div class="d-grid">
-                                        <a href="javascript:void(0)" class="btn btn-light"><i class="mdi mdi-facebook text-primary"></i> Facebook</a>
+                                        <a href="{{ url('auth/facebook') }}" class="btn btn-light"><i class="mdi mdi-facebook text-primary"></i> Facebook</a>
                                     </div>
                                 </div><!--end col-->
 

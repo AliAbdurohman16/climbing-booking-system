@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes(['verify' => true]);
 Route::get('auth/google', 'App\Http\Controllers\Auth\LoginController@redirectToGoogle');
 Route::get('auth/google/callback', 'App\Http\Controllers\Auth\LoginController@handleGoogleCallback');
+Route::get('auth/facebook', 'App\Http\Controllers\Auth\LoginController@redirectToFacebook');
+Route::get('auth/facebook/callback', 'App\Http\Controllers\Auth\LoginController@handleFacebookCallback');
 
 Route::get('/', [App\Http\Controllers\Frontend\IndexController::class, 'index']);
 
