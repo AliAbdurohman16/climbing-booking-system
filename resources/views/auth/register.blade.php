@@ -63,7 +63,7 @@
 
                                 <div class="col-6 mt-3">
                                     <div class="d-grid">
-                                        <a href="javascript:void(0)" class="btn btn-light"><i class="mdi mdi-google text-danger"></i> Google</a>
+                                        <a href="{{ url('auth/google') }}" class="btn btn-light"><i class="mdi mdi-google text-danger"></i> Google</a>
                                     </div>
                                 </div><!--end col-->
                             </div>

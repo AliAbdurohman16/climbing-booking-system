@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes(['verify' => true]);
+Route::get('auth/google', 'App\Http\Controllers\Auth\LoginController@redirectToGoogle');
+Route::get('auth/google/callback', 'App\Http\Controllers\Auth\LoginController@handleGoogleCallback');
 
 Route::get('/', [App\Http\Controllers\Frontend\IndexController::class, 'index']);
 
