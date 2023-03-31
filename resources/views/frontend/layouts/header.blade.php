@@ -29,19 +29,25 @@
 
         <!--Login button Start-->
         <ul class="buy-button list-inline mb-0">
-            <li class="list-inline-item mb-0">
-                <a href="{{ route('register') }}">
-                    <div class="login-btn-primary"><span class="btn btn-primary">Daftar</span></div>
-                    <div class="login-btn-light"><span class="btn btn-light">Daftar</span></div>
-                </a>
-            </li>
+            @guest
+                @if (Route::has('register'))
+                    <li class="list-inline-item mb-0">
+                        <a href="{{ route('register') }}">
+                            <div class="login-btn-primary"><span class="btn btn-primary">Daftar</span></div>
+                            <div class="login-btn-light"><span class="btn btn-light">Daftar</span></div>
+                        </a>
+                    </li>
+                    @endif
 
-            <li class="list-inline-item ps-1 mb-0">
-                <a href="{{ route('login') }}">
-                    <div class="login-btn-primary"><span class="btn btn-outline-primary">Masuk</span></div>
-                    <div class="login-btn-light"><span class="btn btn-outline-light">Masuk</span></div>
-                </a>
-            </li>
+                    @if (Route::has('login'))
+                    <li class="list-inline-item ps-1 mb-0">
+                        <a href="{{ route('login') }}">
+                            <div class="login-btn-primary"><span class="btn btn-outline-primary">Masuk</span></div>
+                            <div class="login-btn-light"><span class="btn btn-outline-light">Masuk</span></div>
+                        </a>
+                    </li>
+                @endif
+            @endguest
         </ul>
         <!--Login button End-->
 
