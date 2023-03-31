@@ -59,10 +59,10 @@ class LoginController extends Controller
             $newUser->name = $user->name;
             $newUser->email = $user->email;
             $newUser->password = Hash::make($user->password);
-            $newUser->email_verified_at = now();
             $newUser->save();
 
-            Auth::login($newUser);
+            // Send email verification
+            $user->sendEmailVerificationNotification();
         }
 
         return redirect('/dashboard');
@@ -85,10 +85,10 @@ class LoginController extends Controller
             $newUser->name = $user->name;
             $newUser->email = $user->email;
             $newUser->password = Hash::make($user->password);
-            $newUser->email_verified_at = now();
             $newUser->save();
 
-            Auth::login($newUser);
+            // Send email verification
+            $user->sendEmailVerificationNotification();
         }
 
         return redirect('/dashboard');
