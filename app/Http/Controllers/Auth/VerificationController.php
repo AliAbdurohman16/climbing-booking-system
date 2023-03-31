@@ -58,6 +58,11 @@ class VerificationController extends Controller
 
         $user->markEmailAsVerified();
 
+        activity()
+            ->useLog('masuk')
+            ->performedOn($user)
+            ->log('User telah verifikasi email.');
+
         return redirect($this->redirectPath())->with('verified', true);
     }
 
@@ -70,6 +75,11 @@ class VerificationController extends Controller
         }
 
         $user->sendEmailVerificationNotification();
+
+        activity()
+            ->useLog('masuk')
+            ->performedOn($user)
+            ->log('User telah mengirim kembali email verifikasi.');
 
         return back()->with('resent', true);
     }
