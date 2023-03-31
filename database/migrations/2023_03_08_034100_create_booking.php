@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('no_whatsapp');
             $table->string('climber');
             $table->timestamps();
-            $table->foreign('mountain_id')->references('id')->on('mountain');
+            $table->foreign('mountain_id')->references('id')->on('mountains');
         });
     }
 
