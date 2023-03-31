@@ -36,10 +36,9 @@
                     </thead>
                     <tbody>
                         <!-- Start -->
-                        <?php $no = 1;?>
                         @foreach($mountains as $mountain)
                             <tr>
-                                <th class="text-center p-3" style="width: 8%;">1</th>
+                                <th class="text-center p-3" style="width: 8%;">{{ $loop->iteration }}</th>
                                 <td class="p-3">{{ $mountain->name }}</td>
                                 <td class="p-3"><img src="{{ asset('storage/' . $mountain->thumbnail) }}" width="100px" class="img-fluid" alt="nama-gunung"></td>
                                 <td class="p-3">{{ $mountain->address }}</td>

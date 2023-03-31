@@ -17,40 +17,37 @@
 <div class="row">
     <div class="col-12 mt-4">
         <div class="table-responsive shadow rounded">
-            <div class="container">
-                <div class="card-body">
-                    <table class="table table-center bg-white mb-0" id="table">
-                        <thead>
+            <div class="card-body">
+                <table class="table table-center bg-white mb-0" id="table">
+                    <thead>
+                        <tr>
+                            <th class="border-bottom p-3">No</th>
+                            <th class="border-bottom p-3">Nama Pengguna</th>
+                            <th class="border-bottom p-3">Nama Log</th>
+                            <th class="border-bottom p-3">Keterangan</th>
+                            <th class="border-bottom p-3">Tanggal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Start -->
+                        @foreach($activities as $activity)
                             <tr>
-                                <th class="border-bottom p-3">No</th>
-                                <th class="border-bottom p-3">Nama Pengguna</th>
-                                <th class="border-bottom p-3">Nama Log</th>
-                                <th class="border-bottom p-3">Keterangan</th>
-                                <th class="border-bottom p-3">Tanggal</th>
+                                <td class="p-3">{{ $loop->iteration }}</td>
+                                <td class="p-3">
+                                    @if($activity->causer)
+                                        {{ $activity->causer->name }}
+                                    @else
+                                        N/A (dari sistem)
+                                    @endif
+                                </td>
+                                <td class="p-3">{{ $activity->log_name }}</td>
+                                <td class="p-3">{{ $activity->description }}</td>
+                                <td class="p-3">{{ $activity->created_at }}</td>
                             </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Start -->
-                            <?php $no = 1;?>
-                            @foreach($activities as $activity)
-                                <tr>
-                                    <td class="p-3"><?= $no++;?></td>
-                                    <td class="p-3">
-                                        @if($activity->causer)
-                                            {{ $activity->causer->name }}
-                                        @else
-                                            N/A (dari sistem)
-                                        @endif
-                                    </td>
-                                    <td class="p-3">{{ $activity->log_name }}</td>
-                                    <td class="p-3">{{ $activity->description }}</td>
-                                    <td class="p-3">{{ $activity->created_at }}</td>
-                                </tr>
-                            @endforeach
-                            <!-- End -->
-                        </tbody>
-                    </table>
-                </div>
+                        @endforeach
+                        <!-- End -->
+                    </tbody>
+                </table>
             </div>
         </div>
     </div><!--end col-->
