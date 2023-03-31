@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Socialite\Facades\Socialite;
 use App\Models\User;
+use Spatie\Activitylog\Models\Activity;
 
 class LoginController extends Controller
 {
@@ -37,10 +39,6 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('guest')->except('logout');
-    }
 
     public function redirectToGoogle()
     {
@@ -49,7 +47,12 @@ class LoginController extends Controller
 
     public function handleGoogleCallback()
     {
-        $user = Socialite::driver('google')->user();
+        try {
+            $user = Socialite::driver('google')->user();
+        } catch (Exception $e) {
+            return redirect()->route('login')->withErrors('Failed to authenticate with Google.');
+        }
+
         $findUser = User::where('email', $user->email)->first();
 
         if ($findUser) {
@@ -75,7 +78,12 @@ class LoginController extends Controller
 
     public function handleFacebookCallback()
     {
-        $user = Socialite::driver('facebook')->user();
+        try {
+            $user = Socialite::driver('facebook')->user();
+        } catch (Exception $e) {
+            return redirect()->route('login')->withErrors('Failed to authenticate with Facebook.');
+        }
+
         $findUser = User::where('email', $user->email)->first();
 
         if ($findUser) {
