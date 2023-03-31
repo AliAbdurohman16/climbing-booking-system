@@ -62,7 +62,7 @@ class LoginController extends Controller
             $newUser->save();
 
             // Send email verification
-            $user->sendEmailVerificationNotification();
+            $newUser->sendEmailVerificationNotification();
         }
 
         return redirect('/dashboard');
@@ -88,7 +88,7 @@ class LoginController extends Controller
             $newUser->save();
 
             // Send email verification
-            $user->sendEmailVerificationNotification();
+            $newUser->sendEmailVerificationNotification();
         }
 
         return redirect('/dashboard');
