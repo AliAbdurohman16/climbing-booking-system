@@ -26,5 +26,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', [App\Http\Controllers\Backend\DashboardController::class, 'index'])->name('dashboard');
     Route::resources([
         'mountain' => App\Http\Controllers\Backend\MountainController::class,
+        'log-activity' => App\Http\Controllers\Backend\LogActivityController::class,
     ]);
 });

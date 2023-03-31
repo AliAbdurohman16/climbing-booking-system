@@ -5,16 +5,16 @@
         <meta charset="utf-8" />
         <title>Mountaineer - Saas & Software Landing Page Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
-        <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
-        <meta name="author" content="Shreethemes" />
-        <meta name="email" content="support@shreethemes.in" />
-        <meta name="website" content="https://shreethemes.in" />
-        <meta name="Version" content="v4.2.0" />
+        <meta name="description" content="Mountaineer adalah sebuah platform online yang dirancang untuk memudahkan proses booking atau pemesanan tiket ketika seseorang ingin melakukan pendakian atau mendaki gunung." />
+        <meta name="keywords" content="mountaineer, gunung, jawa barat, jawa timur, jawa tengah, sumatera, kalimantan, aceh, papua, indonesia, pendakian, pendaki" />
+        <meta name="author" content="Mountainer Official" />
+        <meta name="email" content="officialk@mountaineer.id" />
+        <meta name="website" content="mountaineer.id" />
+        <meta name="Version" content="v1.0.0" />
 
         <!-- favicon -->
         <link rel="shortcut icon" href="{{ asset('frontend') }}/assets/images/favicon.ico" />
-        
+
         <!-- Css -->
         <link href="{{ asset('frontend') }}/assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
         <link href="{{ asset('frontend') }}/assets/libs/js-datepicker/datepicker.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
 
         @yield('content')
         @include('frontend.layouts.footer')
-        
+
 
         <!-- javascript -->
         <!-- JAVASCRIPT -->
