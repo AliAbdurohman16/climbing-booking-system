@@ -59,7 +59,7 @@ class VerificationController extends Controller
         $user->markEmailAsVerified();
 
         activity()
-            ->useLog('masuk')
+            ->useLog('Verifikasi')
             ->performedOn($user)
             ->log('User telah verifikasi email.');
 
@@ -77,7 +77,7 @@ class VerificationController extends Controller
         $user->sendEmailVerificationNotification();
 
         activity()
-            ->useLog('masuk')
+            ->useLog('Kirim Ulang')
             ->performedOn($user)
             ->log('User telah mengirim kembali email verifikasi.');
 
