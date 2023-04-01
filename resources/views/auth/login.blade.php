@@ -47,7 +47,7 @@
                         <button class="btn btn-primary w-100" type="submit">Masuk</button>
 
                         <div class="col-lg-12 mt-4 text-center">
-                            <h6>Atau Daftar Dengan</h6>
+                            <h6>Atau Masuk Dengan</h6>
                             <div class="row">
                                 <div class="col-6 mt-3">
                                     <div class="d-grid">
